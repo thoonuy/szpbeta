@@ -1,0 +1,47 @@
+header {
+	background-color: gray;
+}
+
+.title{
+	size: default;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-item {
+	width: 100px;
+}
+
+.img-set div{
+	display: flex;
+}
+
+nav, footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer {
+	background-color: gray;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 0 20%;
+}
