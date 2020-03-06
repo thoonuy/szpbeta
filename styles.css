@@ -305,3 +305,14 @@ a:hover {
       padding-right: 0;
   }
 }
+
+.gallaryImages{
+  background-color: transparent;
+}
+/*
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 30px;
+}*/
