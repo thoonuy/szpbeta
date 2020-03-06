@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zhiping Shi Dance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous">
+</script>
+<script>
+    $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+</script>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#">Zhiping Shi Dance</a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Schedule</a></li>
+            <li class="item"><a href="#">Curriculum</a></li>
+            <li class="item"><a href="#">Gallery</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <!-- START MAIN BODY -->
+    <main>
+        <!-- SPLASH IMG -->
+        <!-- <img class="splash wow fadeIn" src="src/splash.png">   -->
+
+        <!-- WELCOME CAROUSEL -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="src/caro_img1.png" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="src/caro_img1.png" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="src/caro_img1.png" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="src/caro_img1.png" style="width:100%">
+                <div class="text"></div>
+            </div>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- TEXT CONTAINER 1 -->
+        <div class="container wow fadeIn">
+            <h1>Our Story</h1>
+            <p>Zhiping Shi Dance is a professional ballet training institution located in Milpitas, California. Since opening, we have been under the direction of studio owner and head ballet teacher Zhiping Shi. Our unique curriculum is influenced by the Russian style of ballet and traditional Chinese dance.</p>
+        </div>
+
+        <!-- SEPARATOR 1-->
+        <hr width="150px" class="top-hr wow fadeIn">
+        <div class="sep-icon wow fadeIn">
+            <div class="cir-b"></div>
+            <div class="cir-s"></div>
+            <div class="cir-b"></div>
+        </div>
+        <hr width="95px" class="bot-hr wow fadeIn">
+
+        <!-- IMAGE SET 1 -->
+        <img class="img1 wow fadeIn" src="src/img1.png">
+
+        <!-- TEXT CONTAINER 2 -->
+        <div class="container wow fadeIn">
+            <h1>Our Students</h1>
+            <p>We offer a major theater performance every year. Each student gets an opportunity to showcase their talents and what they have accomplished in the past year, some students are also invited to perform and participate in various community events.</p>
+        </div>
+
+        <!-- SEPARATOR 2 -->
+        <hr width="150px" class="top-hr wow fadeIn">
+        <div class="sep-icon wow fadeIn">
+            <div class="cir-b"></div>
+            <div class="cir-s"></div>
+            <div class="cir-b"></div>
+        </div>
+        <hr width="95px" class="bot-hr wow fadeIn">
+
+        <!-- IMAGE SET 2 -->
+        <img class="img2 wow fadeIn" src="src/img2.png">
+    </main>
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="footer">
+            <div>1264 South Abel Street, Milpitas, CA 95035</div>
+            <div class="cir-s"></div>
+            <div>408-802-7897</div>
+            <div class="cir-s"></div>
+            <div>zhipingshidance@gmail.com</div>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+</body>
+</html>
