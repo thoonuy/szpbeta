@@ -152,7 +152,8 @@ body {
   color: white;
 }
 nav {
-  background: black;
+  /*background: #031624;*/
+  background-color: transparent;
   padding-right: 40px;
   margin: 0;
 }
@@ -385,6 +386,7 @@ img {vertical-align: middle;}
 .master-slide{
   display: flex;
   flex-direction: column;
+  background-color: transparent;
 }
 
 .logo-big {
@@ -392,7 +394,8 @@ img {vertical-align: middle;}
 }
 
 .caro-dots, .master-slide{
-  background-color: #1D4460;
+  /*background-color: #1D4460;*/
+  background-color: transparent;
 }
 
 @-webkit-keyframes fade {
