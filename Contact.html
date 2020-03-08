@@ -1,1 +1,117 @@
-<h1>Contact</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous">
+</script>
+<script>
+    $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+</script>
+</head>
+<body style="background-image: linear-gradient(#031624, #1D4460);">
+    <!-- NAV BAR -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Zhiping Shi Dance</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Schedule</a></li>
+                <li class="item"><a href="#">Curriculum</a></li>
+                <li class="item"><a href="#">Gallery</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+        <div style="height: 1px; width: auto; box-shadow: 0px 3px 4px black;"></div>
+    </header>
+
+    <!-- START MAIN BODY -->
+    <main>
+    	<h1 style="margin-bottom: 90px;">Contact</h1>  
+
+    	<div style="position: relative; height: 391px; width: 332px; margin: auto;">
+    		<img src="src/szp_portrait.png">
+    		<div style="height: 391px; width: 332px; position: absolute; background-color: rgba(171, 82, 82, .5); left: 30px; bottom: 30px; z-index: -1;"></div>
+    	</div>
+
+        <!-- TEXT CONTAINER 1 -->
+        <div class="container wow fadeIn" style="margin-top: 50px">
+            <p>Zhiping Shi has been the owner and head teacher of her studio for the past 15 years. Before opening her studio, she learned traditional Chinese dance and ballet for over 25 years. Throughout her career she has taught more than 200 students and has produced. Zhiping is passionate about nurturing her students into skilled, graceful performers.</p>
+        </div>
+
+        <!-- SEPARATOR 1-->
+        <hr width="150px" class="top-hr wow fadeIn">
+        <div class="sep-icon wow fadeIn">
+            <div class="cir-b"></div>
+            <div class="cir-s"></div>
+            <div class="cir-b"></div>
+        </div>
+        <hr width="95px" class="bot-hr wow fadeIn" style="margin-bottom: 100px;">
+
+        <div class="container wow fadeIn" style="margin-bottom: 40px;">
+        	<h1>Zhiping Shi Dance Studio</h1>
+        	<p>1264 South Abel Street</p>
+        	<p style="margin-bottom: 25px;">Milpitas, CA 95035</p>
+        	<p>408-802-7897</p>
+        	<p>zhipingshidance@gmail.com</p>
+        </div>	
+        	
+		<iframe style="margin: auto;" width="639" height="510" src="https://maps.google.com/maps?q=1264%20South%20Abel%20Street.%20Milpitas%2C%20CA%2095035&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </main>
+
+    <!-- START FOOTER -->
+    <footer>
+    	<h1>Get in Touch</h1>
+        <div class="footer">
+        	<div class="left-form">
+        		<input type="text" name="name" placeholder="Name">
+        		<input type="tel" name="phone" placeholder="Phone Number">
+        		<input type="email" name="email" placeholder="Email">
+        	</div>
+        	<div class="right-form">
+        		<input type="text" name="message" placeholder="Type Your Message">
+        	</div>
+        	<button>Send</button>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+</body>
+</html>

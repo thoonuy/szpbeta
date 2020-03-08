@@ -414,3 +414,7 @@ img {vertical-align: middle;}
 }
 /*END CAROSEL CSS ============================================= */
 
+
+.footer {
+  display: flex;
+}
