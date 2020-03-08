@@ -30,12 +30,12 @@
     <header>
         <nav>
             <ul class="menu">
-                <li class="logo"><a href="#">Zhiping Shi Dance</a></li>
-                <li class="item"><a href="#">Home</a></li>
-                <li class="item"><a href="#">Schedule</a></li>
-                <li class="item"><a href="#">Curriculum</a></li>
-                <li class="item"><a href="#">Gallery</a></li>
-                <li class="item"><a href="#">Contact</a></li>
+                <li class="logo"><a href="index.html">Zhiping Shi Dance</a></li>
+                <li class="item"><a href="index2.html">Home</a></li>
+                <li class="item"><a href="Schedule.html">Schedule</a></li>
+                <li class="item"><a href="Curriculum.html">Curriculum</a></li>
+                <li class="item"><a href="Gallery.html">Gallery</a></li>
+                <li class="item"><a href="Contact.html">Contact</a></li>
                 <li class="toggle"><span class="bars"></span></li>
             </ul>
         </nav>
@@ -77,18 +77,22 @@
     </main>
 
     <!-- START FOOTER -->
-    <footer>
-    	<h1>Get in Touch</h1>
-        <div class="footer">
-        	<div class="left-form">
-        		<input type="text" name="name" placeholder="Name">
-        		<input type="tel" name="phone" placeholder="Phone Number">
-        		<input type="email" name="email" placeholder="Email">
-        	</div>
-        	<div class="right-form">
-        		<input type="text" name="message" placeholder="Type Your Message">
-        	</div>
-        	<button>Send</button>
+    <footer style=" background-color: #4E0909; display: flex; flex-direction: column; text-align: center; margin-top: 50px;">
+        <div class="cfooter">
+        	<h1 style="color: white;">Get in Touch</h1>
+            <div class="footer-form" style="display: flex; flex-direction: row; justify-content: center;">
+            	<div class="left-form" style="width: 450px; height: 240px; display: flex; flex-direction: column; justify-content: space-between;">
+            		<input style="" type="text" name="name" placeholder="Name">
+            		<input type="tel" name="phone" placeholder="Phone Number">
+            		<input type="email" name="email" placeholder="Email">
+            	</div>
+            	<div class="right-form" style="width: 450px; height: 240px">
+                    <textarea name="message" placeholder="Type Your Message"> </textarea>
+            	</div>
+            </div>
+            <div class="send-button" style="margin: 30px 0 10px;">
+                <button>Send</button>
+            </div>
         </div>
     </footer>
 
