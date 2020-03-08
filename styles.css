@@ -483,3 +483,21 @@ div.cfooter {
   background-color: #AB5252;
   border-width: 0;
 }
+
+.gallery-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-row {
+  widows: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.gallery-row img {
+  width: 30%;
+  height: auto;
+  margin: 10px 10px;
+}
