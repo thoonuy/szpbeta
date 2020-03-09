@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Curriculum - Classtype</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="wow.min.js"></script>
+      <script>
+      new WOW().init();
+      </script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html">Zhiping Shi Dance</a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="Schedule.html">Schedule</a></li>
+            <div class="item dropdown">
+                   <li class="dropItem"><a href="#">Curriculum</a></li>
+                      <div class="dropdown-content">
+                        <a href="Classtype.html">Class Types</a>
+                        <a href="Pricing.html">Pricing</a>
+                        <a href="#">Showcase</a>
+                      </div>
+                </div>
+            <li class="item"><a href="Gallery.html">Gallery</a></li>
+            <li class="item"><a href="Contact.htlm">Contact</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <!-- START MAIN BODY -->
+    <main>
+
+        <div class = "">
+            <img class="splash wow fadeIn" src="src/curriculumBanner.png" style="max-width: 100%; margin:0px">
+        </div>
+     
+        <div class="container wow fadeIn">
+            <h1 style = "color:#AFC2D2">PRICING</h1>
+            <p>Here you will find our tuition costs for the 2019-2020 schedule. To register a new student, please visit our studio and submit a registration form with payment at the front desk. All monthly tuition is due on the 1st of each month.</p>
+        </div>
+
+        <hr width="150px" class="top-hr wow fadeIn">
+        <div class="sep-icon wow fadeIn">
+            <div class="cir-b"></div>
+            <div class="cir-s"></div>
+            <div class="cir-b"></div>
+        </div>
+        <hr width="95px" class="bot-hr wow fadeIn">
+
+
+        <div class = "">
+            <img style=" width: 70%" src="src/price.png">
+        </div>
+
+       
+
+
+    </main>
+
+    <!-- START FOOTER -->
+    <footer>
+        <div class="footer">
+            <div>1264 South Abel Street, Milpitas, CA 95035</div>
+            <div class="cir-s"></div>
+            <div>408-802-7897</div>
+            <div class="cir-s"></div>
+            <div>zhipingshidance@gmail.com</div>
+        </div>
+    </footer>
+</body>
+</html>
