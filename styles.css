@@ -359,7 +359,7 @@ a:hover {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: transparent;}
-=======
+
 /*START CAROSEL CSS ===================================================== */
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -525,24 +525,32 @@ div.cfooter {
 }
 
 .gallery-container {
+  margin: 0;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
 
 .gallery-row {
-  widows: 100%;
+  width: 100%;
   max-width: 1400px;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .gallery-row img {
-  width: 30%;
+  width: 32%;
   height: auto;
-  margin: 10px 10px;
 }
 
 body {
   background-image: linear-gradient(#031624, #1D4460);
 }
->>>>>>> a265e320a19a10b8928ba6976425a4b57e116604
+
+main {
+  max-width: 1270px;
+  margin: auto;
+}
