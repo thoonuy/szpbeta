@@ -541,10 +541,10 @@ div.cfooter {
   margin-bottom: 25px;
 }
 
-.gallery-row img {
+/*.gallery-row img {
   width: 32%;
   height: auto;
-}
+}*/
 
 body {
   background-image: linear-gradient(#031624, #1D4460);
