@@ -18,6 +18,7 @@ img {
 h1 {
   color: #aa5252;
   font-family: 'Cormorant Infant', serif;
+  font-weight: normal;
 }
 
 main *{
