@@ -5,6 +5,7 @@
 p {
   max-width: 650px;
   margin: 0 auto;
+  font-family: 'EB Garamond', serif;
 }
 
 img {
@@ -16,6 +17,7 @@ img {
 
 h1 {
   color: #aa5252;
+  font-family: 'Cormorant Infant', serif;
 }
 
 main *{
@@ -320,7 +322,6 @@ a:hover {
   grid-gap: 30px;
 }*/
 
-<<<<<<< HEAD
 .dropItem{
     background-color: transparent;
     color: white;
@@ -556,4 +557,8 @@ body {
 main {
   max-width: 1270px;
   margin: auto;
+}
+
+.page-head-title {
+  font-family: 'Cormorant Unicase', serif;
 }
