@@ -481,7 +481,8 @@ div.cfooter {
 
 .right-form textarea{
   height: 100%;
-  width: 424px;
+  width: 100%;
+  max-width: 424px;
   border-radius: 12px;
   font-size: 20px;
   padding: 12px;
@@ -495,10 +496,12 @@ div.cfooter {
 .right-form {
   display: flex;
   justify-content: flex-end;
+  margin-left: 30px;
 }
 
 .left-form input {
-  width: 424px; 
+  width: 100%;
+  max-width: 424px; 
   height: 20%;
   color: black;
   border-radius: 12px;
